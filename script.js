@@ -1,4 +1,4 @@
-const testeUrl =
+const testUrl =
   "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/teste";
 const url =
   "https://crudcrud.com/api/adc54d7744e946cd8ffc1851accabb6d/grupo275";
@@ -8,7 +8,7 @@ function enviarDatos() {
   let ap = document.getElementById("apellido").value;
   let gr = document.getElementById("grupo").value;
   let sa = document.getElementById("sala").value;
-  fetch(testeUrl, {
+  fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json; charset=utf-8" },
     body: JSON.stringify({ nombre: no, apellido: ap, grupo: gr, sala: sa }),
@@ -18,7 +18,7 @@ function enviarDatos() {
 function mostrarDatos() {
   var div = document.getElementById("mostrar");
   div.innerHTML = "";
-  fetch(testeUrl)
+  fetch(url)
     .then((response) => {
       return response.json();
     })
