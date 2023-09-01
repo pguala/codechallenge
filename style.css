@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@800&family=DM+Sans:wght@400;800&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: radial-gradient(#373737, #0e0e0e);
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'DM Sans';
+    padding-top: 10vh;
+}
+
+input[type=text],
+input[type=number] {
+    color: #121212;
+    width: 30%;
+    padding: 1em;
+    margin: 0.5em;
+    border: 0;
+    border-radius: 50px;
+    font-weight: 800;
+}
+
+input[type=submit] {
+    background: -webkit-linear-gradient(#f00c4a, #a30081);
+    color: white;
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14pt;
+    font-weight: 800;
+    font-family: 'Azeret Mono', monospace;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.4);
+    transition: transform 200ms ease-in-out;
+}
+
+p, h4 {
+    color: white;
+    margin: 0.3em;
+}
+
+h4 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 13pt;
+}
