@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var boton = document.getElementById("enviar");
   boton.addEventListener("click", function () {
     enviarDatos();
-    setTimeout(mostrarDatos(), 15000);
+    setTimeout(mostrarDatos(), 50000);
   });
 });
